@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {toDoListStyle} from './styles/app.style'
 
 function ToDoList() {
   const [tasks, setTasks] = useState([]);
@@ -20,7 +21,7 @@ function ToDoList() {
     setTasks(updatedTasks);
   }
   return (
-    <div className="to-do-list">
+    <div style={toDoListStyle}>
       <h1>To-Do-List</h1>
       <div className="input-div">
         <input
